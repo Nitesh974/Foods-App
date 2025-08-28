@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+    position: relative; /* Ensure the admin title is centered relative to the navbar */
+}
+.navbar .logo {
+    width: max(10%, 80px);
+}
+.navbar .profile {
+    width: 40px;
+}
+.navbar .admin-title {
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 2rem; 
+    font-weight: bold;
+    color: #51855a; 
+    font-family: fantasy;
+    /* font-family: 'Arial', sans-serif;  */
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+}
