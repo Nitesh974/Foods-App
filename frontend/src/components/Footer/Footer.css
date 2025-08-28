@@ -1,0 +1,118 @@
+.footer {
+    color: #D9D9D9;
+    background-color: #323232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 8vw;
+    padding-top: 80px;
+}
+
+.footer-logo {
+    width: 250px; /* Adjust size as needed */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    border: 2px solid #D9D9D9; /* Optional border for contrast */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-logo:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Updated to 4 columns */
+    gap: 80px;
+}
+
+.footer-content-left,
+.footer-content-center,
+.footer-content-right,
+.footer-content-credits {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.footer-content-left ul li,
+.footer-content-center ul li,
+.footer-content-right ul li,
+.footer-content-credits ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.footer-content-left h2,
+.footer-content-center h2,
+.footer-content-right h2,
+.footer-content-credits h2 {
+    color: white;
+}
+
+.footer-social-icons img,
+.credits-icon { 
+    width: 40px; 
+    height: 40px; 
+}
+
+.credits-icon-linkedin { 
+    width: 38px; 
+    height: 38px; 
+}
+
+.credits-icon-mail {
+    width: 40px; 
+    height: 40px;
+    margin-left: 5px; /* Adjust margin to remove extra space */
+}
+
+.credits-icon-github {
+    width: 55px; 
+    height: 55px;
+    
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer li {
+    cursor: pointer;
+}
+
+.footer hr {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0px;
+}
+
+.checkout-button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.checkout-button:hover {
+    background-color: white;
+    color: #323232;
+}
+
+@media (max-width: 750px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footer-copyright {
+        text-align: center;
+    }
+}
